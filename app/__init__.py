@@ -8,4 +8,6 @@ def create_app(config_class=Config):
 
     db.init_app(app)
 
+    from app import models
+    
     return app
