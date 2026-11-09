@@ -1,5 +1,5 @@
 flask
 flask-smorest
 flask-sqlalchemy
-flask-migrate
+flask-httpauth
 gunicorn

@@ -11,4 +11,6 @@ class Task(db.Model):
     done = db.Column(db.Boolean, default=False, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False, index=True)
     created_at = db.Column(db.DetaTime, default=lambda: datetime.now(timezone.utc))
+
+    user = db.relationship("User", back_populates="tasks")
     
