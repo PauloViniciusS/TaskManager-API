@@ -2,5 +2,12 @@ import os
 
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL", "sqlite:///app/data/taskmanagerapi.db")
+    SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL", "sqlite:///taskmanagerapi.db")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+    API_TITLE = "Task Manager API"
+    API_VERSION = "v1"
+    OPENAPI_VERSION = "3.0.3"
+    OPENAPI_URL_PREFIX = "/"
+    OPENAPI_SWAGGER_UI_PATH = "/docs"
+    OPENAPI_SWAGGER_UI_URL = "https://cdn.jsdelivr.net/npm/swagger-ui-dist/"

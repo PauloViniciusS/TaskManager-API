@@ -115,3 +115,5 @@ pip-log.txt
 .venv
 .env
 .vscode
+
+data/
